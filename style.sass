@@ -1,0 +1,386 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: #162831
+    font-family: 'El Messiri', sans-serif
+    color: #fff
+
+.container
+    max-width: 1300px
+    margin: 0 auto
+    margin-top: 30px
+
+.button
+    font-family: 'Montserrat', sans-serif
+    font-weight: 400
+    width: 186px
+    height: 36px
+    border: 0
+    border-radius: 3px
+    margin: 0px
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    font-size: 13px
+    cursor: pointer
+    transition: linear 0.1s
+
+.button:hover
+    color: #021658
+
+
+h2
+    font-size: 42px
+    font-weight: 700
+    color: #fff
+    text-align: center
+    margin-bottom: 100px
+
+h2::before
+    content: ""
+    display: inline-block
+    margin-right: 45px
+    background-color: #018ABE
+    width: 0.5em
+    height: 0.5em
+    border-radius: 0px 50px 0px 50px
+
+h2::after
+    content: ""
+    display: inline-block
+    margin-left: 45px
+    background-color: #018ABE
+    width: 0.5em
+    height: 0.5em
+    border-radius: 50px 0px 50px 0px
+
+/* HEADER */
+
+.header
+    display: flex
+    flex-direction: row
+    font-family: 'Montserrat', sans-serif
+    font-size: 14px
+    margin-block: 50px
+
+.nav
+    margin: auto
+    ul
+        list-style: none
+        li
+            display: inline
+            margin-right: 50px
+            cursor: pointer
+    a
+        text-decoration: none
+        color: #fff
+
+a
+    transition: linear 0.1s
+    cursor: pointer
+
+a:hover
+    color: #d0d343
+
+
+.button__container
+    align-self: center
+
+.button__header
+    background-color: #018abe
+    color: #fff
+
+/* FIRST SCREEN */
+
+.first-screen
+    padding-top: 136px
+    height: 600px
+    color: #fff
+    border-radius: 15px
+    background-color: #98C9DC 50%
+    background-image: url("../assets/main_card.png")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    text-align: center
+    line-height: 90px
+    margin-bottom: 150px
+
+    h1
+        font-size: 64px
+
+    h3
+        font-size: 24px
+        font-weight: 700
+
+    h3::before
+        content: ""
+        display: inline-block
+        margin-right: 66px
+        background-color: #fff
+        width: 1em
+        height: 1em
+        border-radius: 0px 50px 0px 50px
+
+    h3::after
+        content: ""
+        display: inline-block
+        margin-left: 66px
+        background-color: #fff
+        width: 1em
+        height: 1em
+        border-radius: 50px 0px 50px 0px
+
+/* SERVICES */
+
+.services
+    margin-bottom: 150px
+    button
+        border: none
+
+
+.services__grid
+    height: 540px
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-auto-flow: dense
+    gap: 24px
+
+.service__1
+    grid-row: 1 / 3
+
+.service
+    position: relative
+    max-width: 416px
+    min-height: 258px
+    border-radius: 10px
+    background-image: url('../assets/swim_2.png')
+    background-color: #018ABE 50%
+    background-repeat: no-repeat
+    background-size: fill
+    background-position: center
+    transition: linear 0.05s
+    span
+        position: absolute
+        left: 40px
+        bottom: 30px
+        color: white
+        font-weight: 700
+        font-size: 24px
+
+.service:hover
+    border-bottom: solid #018ABE 7px
+
+/* REVIEWS */ 
+
+.reviews
+    max-width: 1736px
+    margin: 0 auto
+    margin-bottom: 150px
+
+.review__card
+    padding: 30px 30px
+    display: flex
+    flex-direction: column
+    height: 350px
+    margin: 50px auto
+    background-color: #018abe
+    border-radius: 10px
+    transform: scale(0.8)
+    opacity: 0.5
+    transition: all 0.3s
+    font-family: 'Montserrat', sans-serif
+
+    h4
+        font-size: 20px
+        font-weight: 700
+        margin-bottom: 20px
+    p
+        font-size: 14px
+        font-weight: 300
+        line-height: 19px
+
+.owl-item.active.center .review__card
+    transform: scale(1.2)
+    opacity: 1
+    border-radius: 10px
+
+
+/* ABOUT */
+
+.about
+    margin-bottom: 150px
+
+.first-level
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin-bottom: 100px
+
+.first-level__text
+    margin-right: 84px
+    text-align: left
+    width: 466px
+    color: #fff
+    font-family: 'Montserrat', sans-serif
+    vertical-align: middle
+
+    h4
+        font-weight: 700
+        font-size: 24px
+        margin-bottom: 30px
+        padding-top: 40px
+    p
+        font-weight: 400
+        font-size: 16px
+
+.second-level
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+.second-level__text
+    vertical-align: middle
+    margin-left: 84px
+    text-align: left
+    width: 466px
+    color: #fff
+    font-family: 'Montserrat', sans-serif
+
+    h4
+        font-weight: 700
+        font-size: 24px
+        margin-bottom: 30px
+    p
+        font-weight: 400
+        font-size: 16px
+
+/* PRICE LIST */
+
+.price__container
+    margin-bottom: 150px
+
+.price__about
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+
+.prices
+    margin-right: 134px
+
+.price
+    font-size: 18px
+    margin-bottom: 31px
+    vertical-align: middle
+
+.price
+    a
+        display: inline-block
+        width: 268px
+        margin-right: 23px
+        font-weight: 400
+        font-family: 'Montserrat', sans-serif
+
+    a::before
+        content: ""
+        display: inline-block
+        margin-right: 20px
+        background-color: #018ABE
+        width: 0.6em
+        height: 0.6em
+        border-radius: 0px 50px 0px 50px
+    
+    span
+        display: inline-block
+        width: 87px
+        text-align: end
+        font-weight: 700
+
+.gift-card
+    figcaption
+        text-align: center
+        margin-top: 30px
+        font-weight: 700
+        font-size: 21px
+
+/* CONTACTS */
+
+iframe
+    margin-right: 42px
+    border-radius: 10px    
+
+.contacts
+    display: flex
+    flex-direction: row
+
+.contacts__block
+    display: flex
+    flex-direction: column
+
+.contacts-card
+    display: flex
+    flex-direction: column
+    background-color: #018ABE
+    width: 392px
+    height: 290px
+    padding: 45px 35px
+    border-radius: 10px
+    margin-bottom: 24px
+
+.contacts-card
+    h3
+        margin-bottom: 21px
+        font-size: 24px
+        font-weight: 700
+    span
+        margin-bottom: 21px
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+
+.button__contacts
+    font-size: 13px
+    font-weight: 600
+    font-family: 'Montserrat', sans-serif
+    color: #018ABE
+    border-radius: 3px
+    padding: 9px 15px
+
+.map__icon::before
+    content: ""
+    display: inline-block
+    margin-right: 23px
+    background-image: url("../assets/Vector.svg")
+    vertical-align: middle
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+    width: 20px
+    height: 20px
+
+.street__icon::before
+    content: ""
+    display: inline-block
+    margin-right: 23px
+    background-image: url("../assets/Vector (1).svg")
+    vertical-align: middle
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+    width: 20px
+    height: 20px
+
+.calendar__icon::before
+    content: ""
+    display: inline-block
+    margin-right: 23px
+    background-image: url("../assets/Vector (2).svg")
+    vertical-align: middle
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+    width: 20px
+    height: 20px
